@@ -18,7 +18,8 @@
     self.window.rootViewController = [[UIViewController alloc] init];
     [self.window makeKeyAndVisible];
 
-    NSLog(@"%@", [UIDevice.currentDevice talkingDataDeviceIdentifier]);
+    NSString *UDID = [UIDevice.currentDevice talkingDataDeviceIdentifier];
+    NSLog(@"UDID: %@", UDID);
 
     return YES;
 }
