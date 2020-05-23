@@ -1,0 +1,18 @@
+PODS:
+  - TalkingDataAppAnalytics (4.0.50):
+    - TalkingDataAppAnalytics/Basic (= 4.0.50)
+  - TalkingDataAppAnalytics/Basic (4.0.50)
+
+DEPENDENCIES:
+  - TalkingDataAppAnalytics (from `.`)
+
+EXTERNAL SOURCES:
+  TalkingDataAppAnalytics:
+    :path: "."
+
+SPEC CHECKSUMS:
+  TalkingDataAppAnalytics: 6b05f17b0cbb8bcf854014707ba3fd588c4a3c54
+
+PODFILE CHECKSUM: 8116799b8906b501698da2a50b9638e393d893eb
+
+COCOAPODS: 1.9.2
