@@ -1,0 +1,23 @@
+name: Build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: pod install
+
+      - name: Build Example Project
+        run: |
+          set -o pipefail
+          xcodebuild clean build \
+            -workspace TalkingDataAppAnalytics.xcworkspace -scheme Example \
+            -configuration Release CODE_SIGN_IDENTITY=- \
+            -sdk iphonesimulator | xcpretty -c
+
+      - name: Lint Pod
+        run: pod lib lint
