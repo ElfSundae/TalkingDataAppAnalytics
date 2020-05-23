@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54441011F8D504FCA4EF5758 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54440011F8D504FCA4EF5758 /* AdSupport.framework */; };
+		54441012F8D504FCA4EF5758 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54440012F8D504FCA4EF5758 /* CoreMotion.framework */; };
+		54441013F8D504FCA4EF5758 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54440013F8D504FCA4EF5758 /* CoreTelephony.framework */; };
+		54441014F8D504FCA4EF5758 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54440014F8D504FCA4EF5758 /* SystemConfiguration.framework */; };
+		54441015F8D504FCA4EF5758 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54440015F8D504FCA4EF5758 /* WebKit.framework */; };
+		5444101AF8D504FCA4EF5758 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444001AF8D504FCA4EF5758 /* libc++.tbd */; };
+		5444101BF8D504FCA4EF5758 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444001BF8D504FCA4EF5758 /* libz.tbd */; };
+		5444102AF8D504FCA4EF5758 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444002AF8D504FCA4EF5758 /* libTalkingData.a */; };
+		54442104F8D504FCA4EF5758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54441104F8D504FCA4EF5758 /* Assets.xcassets */; };
+		54442105F8D504FCA4EF5758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54441105F8D504FCA4EF5758 /* LaunchScreen.storyboard */; };
+		54442107F8D504FCA4EF5758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54441107F8D504FCA4EF5758 /* Main.storyboard */; };
+		54442109F8D504FCA4EF5758 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441109F8D504FCA4EF5758 /* main.m */; };
+		5444210BF8D504FCA4EF5758 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444110BF8D504FCA4EF5758 /* AppDelegate.m */; };
+		5444210DF8D504FCA4EF5758 /* TDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444110DF8D504FCA4EF5758 /* TDHomeViewController.m */; };
+		5444210FF8D504FCA4EF5758 /* TDHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444110FF8D504FCA4EF5758 /* TDHomeTableViewCell.m */; };
+		54442111F8D504FCA4EF5758 /* TDInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441111F8D504FCA4EF5758 /* TDInfoViewController.m */; };
+		54442113F8D504FCA4EF5758 /* TDGeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441113F8D504FCA4EF5758 /* TDGeneralViewController.m */; };
+		54442115F8D504FCA4EF5758 /* TDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441115F8D504FCA4EF5758 /* TDTableViewController.m */; };
+		54442202F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441202F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.m */; };
+		54442204F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441204F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.m */; };
+		54442206F8D504FCA4EF5758 /* TDAALocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441206F8D504FCA4EF5758 /* TDAALocationTableViewCell.m */; };
+		5444220AF8D504FCA4EF5758 /* TDAAAccountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444120AF8D504FCA4EF5758 /* TDAAAccountTableViewCell.m */; };
+		5444220CF8D504FCA4EF5758 /* TDAACustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444120CF8D504FCA4EF5758 /* TDAACustomViewController.m */; };
+		5444220EF8D504FCA4EF5758 /* TDAAStandardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444120EF8D504FCA4EF5758 /* TDAAStandardViewController.m */; };
+		54442210F8D504FCA4EF5758 /* TDAAPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441210F8D504FCA4EF5758 /* TDAAPageViewController.m */; };
+		54442212F8D504FCA4EF5758 /* TDAAPageFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441212F8D504FCA4EF5758 /* TDAAPageFirstViewController.m */; };
+		54442214F8D504FCA4EF5758 /* TDAAPageSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54441214F8D504FCA4EF5758 /* TDAAPageSecondViewController.m */; };
+/* End PBXBuildFile section */
+
+
+/* Begin PBXFileReference section */
+		54440011F8D504FCA4EF5758 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		54440012F8D504FCA4EF5758 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		54440013F8D504FCA4EF5758 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		54440014F8D504FCA4EF5758 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		54440015F8D504FCA4EF5758 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5444001AF8D504FCA4EF5758 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		5444001BF8D504FCA4EF5758 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		54440021F8D504FCA4EF5758 /* TalkingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TalkingData.h; path = ../TalkingData.h; sourceTree = "<group>"; };
+		5444002AF8D504FCA4EF5758 /* libTalkingData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTalkingData.a; path = ../libTalkingData.a; sourceTree = "<group>"; };
+		54441004F8D504FCA4EF5758 /* PhoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54441101F8D504FCA4EF5758 /* PhoneDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhoneDemo.entitlements; sourceTree = "<group>"; };
+		54441102F8D504FCA4EF5758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54441104F8D504FCA4EF5758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54441106F8D504FCA4EF5758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54441108F8D504FCA4EF5758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54441109F8D504FCA4EF5758 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5444110AF8D504FCA4EF5758 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5444110BF8D504FCA4EF5758 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5444110CF8D504FCA4EF5758 /* TDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDHomeViewController.h; sourceTree = "<group>"; };
+		5444110DF8D504FCA4EF5758 /* TDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDHomeViewController.m; sourceTree = "<group>"; };
+		5444110EF8D504FCA4EF5758 /* TDHomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDHomeTableViewCell.h; sourceTree = "<group>"; };
+		5444110FF8D504FCA4EF5758 /* TDHomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDHomeTableViewCell.m; sourceTree = "<group>"; };
+		54441110F8D504FCA4EF5758 /* TDInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDInfoViewController.h; sourceTree = "<group>"; };
+		54441111F8D504FCA4EF5758 /* TDInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDInfoViewController.m; sourceTree = "<group>"; };
+		54441112F8D504FCA4EF5758 /* TDGeneralViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDGeneralViewController.h; sourceTree = "<group>"; };
+		54441113F8D504FCA4EF5758 /* TDGeneralViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDGeneralViewController.m; sourceTree = "<group>"; };
+		54441114F8D504FCA4EF5758 /* TDTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDTableViewController.h; sourceTree = "<group>"; };
+		54441115F8D504FCA4EF5758 /* TDTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDTableViewController.m; sourceTree = "<group>"; };
+		54441201F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAADeviceIDTableViewCell.h; sourceTree = "<group>"; };
+		54441202F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAADeviceIDTableViewCell.m; sourceTree = "<group>"; };
+		54441203F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAExceptionTableViewCell.h; sourceTree = "<group>"; };
+		54441204F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAExceptionTableViewCell.m; sourceTree = "<group>"; };
+		54441205F8D504FCA4EF5758 /* TDAALocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDAALocationTableViewCell.h; sourceTree = "<group>"; };
+		54441206F8D504FCA4EF5758 /* TDAALocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDAALocationTableViewCell.m; sourceTree = "<group>"; };
+		54441209F8D504FCA4EF5758 /* TDAAAccountTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAAccountTableViewCell.h; sourceTree = "<group>"; };
+		5444120AF8D504FCA4EF5758 /* TDAAAccountTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAAccountTableViewCell.m; sourceTree = "<group>"; };
+		5444120BF8D504FCA4EF5758 /* TDAACustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAACustomViewController.h; sourceTree = "<group>"; };
+		5444120CF8D504FCA4EF5758 /* TDAACustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAACustomViewController.m; sourceTree = "<group>"; };
+		5444120DF8D504FCA4EF5758 /* TDAAStandardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAStandardViewController.h; sourceTree = "<group>"; };
+		5444120EF8D504FCA4EF5758 /* TDAAStandardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAStandardViewController.m; sourceTree = "<group>"; };
+		5444120FF8D504FCA4EF5758 /* TDAAPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAPageViewController.h; sourceTree = "<group>"; };
+		54441210F8D504FCA4EF5758 /* TDAAPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAPageViewController.m; sourceTree = "<group>"; };
+		54441211F8D504FCA4EF5758 /* TDAAPageFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAPageFirstViewController.h; sourceTree = "<group>"; };
+		54441212F8D504FCA4EF5758 /* TDAAPageFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAPageFirstViewController.m; sourceTree = "<group>"; };
+		54441213F8D504FCA4EF5758 /* TDAAPageSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAAPageSecondViewController.h; sourceTree = "<group>"; };
+		54441214F8D504FCA4EF5758 /* TDAAPageSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAAPageSecondViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54441006F8D504FCA4EF5758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54441011F8D504FCA4EF5758 /* AdSupport.framework in Frameworks */,
+				54441012F8D504FCA4EF5758 /* CoreMotion.framework in Frameworks */,
+				54441013F8D504FCA4EF5758 /* CoreTelephony.framework in Frameworks */,
+				54441014F8D504FCA4EF5758 /* SystemConfiguration.framework in Frameworks */,
+				54441015F8D504FCA4EF5758 /* WebKit.framework in Frameworks */,
+				5444101AF8D504FCA4EF5758 /* libc++.tbd in Frameworks */,
+				5444101BF8D504FCA4EF5758 /* libz.tbd in Frameworks */,
+				5444102AF8D504FCA4EF5758 /* libTalkingData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54440004F8D504FCA4EF5758 = {
+			isa = PBXGroup;
+			children = (
+				54441100F8D504FCA4EF5758 /* PhoneDemo */,
+				54440007F8D504FCA4EF5758 /* TalkingDataSDK */,
+				54440006F8D504FCA4EF5758 /* Frameworks */,
+				54440005F8D504FCA4EF5758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54440005F8D504FCA4EF5758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54441004F8D504FCA4EF5758 /* PhoneDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54440006F8D504FCA4EF5758 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54440011F8D504FCA4EF5758 /* AdSupport.framework */,
+				54440012F8D504FCA4EF5758 /* CoreMotion.framework */,
+				54440013F8D504FCA4EF5758 /* CoreTelephony.framework */,
+				54440014F8D504FCA4EF5758 /* SystemConfiguration.framework */,
+				54440015F8D504FCA4EF5758 /* WebKit.framework */,
+				5444001AF8D504FCA4EF5758 /* libc++.tbd */,
+				5444001BF8D504FCA4EF5758 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54440007F8D504FCA4EF5758 /* TalkingDataSDK */ = {
+			isa = PBXGroup;
+			children = (
+				54440021F8D504FCA4EF5758 /* TalkingData.h */,
+				5444002AF8D504FCA4EF5758 /* libTalkingData.a */,
+			);
+			name = TalkingDataSDK;
+			sourceTree = "<group>";
+		};
+		54441100F8D504FCA4EF5758 /* PhoneDemo */ = {
+			isa = PBXGroup;
+			children = (
+				54441101F8D504FCA4EF5758 /* PhoneDemo.entitlements */,
+				54441102F8D504FCA4EF5758 /* Info.plist */,
+				54441104F8D504FCA4EF5758 /* Assets.xcassets */,
+				54441105F8D504FCA4EF5758 /* LaunchScreen.storyboard */,
+				54441107F8D504FCA4EF5758 /* Main.storyboard */,
+				54441109F8D504FCA4EF5758 /* main.m */,
+				5444110AF8D504FCA4EF5758 /* AppDelegate.h */,
+				5444110BF8D504FCA4EF5758 /* AppDelegate.m */,
+				5444110CF8D504FCA4EF5758 /* TDHomeViewController.h */,
+				5444110DF8D504FCA4EF5758 /* TDHomeViewController.m */,
+				5444110EF8D504FCA4EF5758 /* TDHomeTableViewCell.h */,
+				5444110FF8D504FCA4EF5758 /* TDHomeTableViewCell.m */,
+				54441110F8D504FCA4EF5758 /* TDInfoViewController.h */,
+				54441111F8D504FCA4EF5758 /* TDInfoViewController.m */,
+				54441112F8D504FCA4EF5758 /* TDGeneralViewController.h */,
+				54441113F8D504FCA4EF5758 /* TDGeneralViewController.m */,
+				54441114F8D504FCA4EF5758 /* TDTableViewController.h */,
+				54441115F8D504FCA4EF5758 /* TDTableViewController.m */,
+				54441200F8D504FCA4EF5758 /* AppAnalytics */,
+			);
+			path = PhoneDemo;
+			sourceTree = "<group>";
+		};
+		54441200F8D504FCA4EF5758 /* AppAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				54441201F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.h */,
+				54441202F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.m */,
+				54441203F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.h */,
+				54441204F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.m */,
+				54441205F8D504FCA4EF5758 /* TDAALocationTableViewCell.h */,
+				54441206F8D504FCA4EF5758 /* TDAALocationTableViewCell.m */,
+				54441209F8D504FCA4EF5758 /* TDAAAccountTableViewCell.h */,
+				5444120AF8D504FCA4EF5758 /* TDAAAccountTableViewCell.m */,
+				5444120BF8D504FCA4EF5758 /* TDAACustomViewController.h */,
+				5444120CF8D504FCA4EF5758 /* TDAACustomViewController.m */,
+				5444120DF8D504FCA4EF5758 /* TDAAStandardViewController.h */,
+				5444120EF8D504FCA4EF5758 /* TDAAStandardViewController.m */,
+				5444120FF8D504FCA4EF5758 /* TDAAPageViewController.h */,
+				54441210F8D504FCA4EF5758 /* TDAAPageViewController.m */,
+				54441211F8D504FCA4EF5758 /* TDAAPageFirstViewController.h */,
+				54441212F8D504FCA4EF5758 /* TDAAPageFirstViewController.m */,
+				54441213F8D504FCA4EF5758 /* TDAAPageSecondViewController.h */,
+				54441214F8D504FCA4EF5758 /* TDAAPageSecondViewController.m */,
+			);
+			path = AppAnalytics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54441000F8D504FCA4EF5758 /* PhoneDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54441001F8D504FCA4EF5758 /* Build configuration list for PBXNativeTarget "PhoneDemo" */;
+			buildPhases = (
+				54441005F8D504FCA4EF5758 /* Sources */,
+				54441006F8D504FCA4EF5758 /* Frameworks */,
+				54441007F8D504FCA4EF5758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhoneDemo;
+			productName = PhoneDemo;
+			productReference = 54441004F8D504FCA4EF5758 /* PhoneDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54440000F8D504FCA4EF5758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TendCloud;
+				TargetAttributes = {
+					54441000F8D504FCA4EF5758 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 54440001F8D504FCA4EF5758 /* Build configuration list for PBXProject "TalkingDataSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 54440004F8D504FCA4EF5758;
+			productRefGroup = 54440005F8D504FCA4EF5758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54441000F8D504FCA4EF5758 /* PhoneDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54441007F8D504FCA4EF5758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54442104F8D504FCA4EF5758 /* Assets.xcassets in Resources */,
+				54442105F8D504FCA4EF5758 /* LaunchScreen.storyboard in Resources */,
+				54442107F8D504FCA4EF5758 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54441005F8D504FCA4EF5758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54442109F8D504FCA4EF5758 /* main.m in Sources */,
+				5444210BF8D504FCA4EF5758 /* AppDelegate.m in Sources */,
+				5444210DF8D504FCA4EF5758 /* TDHomeViewController.m in Sources */,
+				5444210FF8D504FCA4EF5758 /* TDHomeTableViewCell.m in Sources */,
+				54442111F8D504FCA4EF5758 /* TDInfoViewController.m in Sources */,
+				54442113F8D504FCA4EF5758 /* TDGeneralViewController.m in Sources */,
+				54442115F8D504FCA4EF5758 /* TDTableViewController.m in Sources */,
+				54442202F8D504FCA4EF5758 /* TDAADeviceIDTableViewCell.m in Sources */,
+				54442204F8D504FCA4EF5758 /* TDAAExceptionTableViewCell.m in Sources */,
+				54442206F8D504FCA4EF5758 /* TDAALocationTableViewCell.m in Sources */,
+				5444220AF8D504FCA4EF5758 /* TDAAAccountTableViewCell.m in Sources */,
+				5444220CF8D504FCA4EF5758 /* TDAACustomViewController.m in Sources */,
+				5444220EF8D504FCA4EF5758 /* TDAAStandardViewController.m in Sources */,
+				54442210F8D504FCA4EF5758 /* TDAAPageViewController.m in Sources */,
+				54442212F8D504FCA4EF5758 /* TDAAPageFirstViewController.m in Sources */,
+				54442214F8D504FCA4EF5758 /* TDAAPageSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+
+/* Begin PBXVariantGroup section */
+		54441105F8D504FCA4EF5758 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54441106F8D504FCA4EF5758 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		54441107F8D504FCA4EF5758 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54441108F8D504FCA4EF5758 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54440002F8D504FCA4EF5758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54440003F8D504FCA4EF5758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54441002F8D504FCA4EF5758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhoneDemo/PhoneDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PhoneDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.td.TalkingDataSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54441003F8D504FCA4EF5758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhoneDemo/PhoneDemo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PhoneDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/..",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.td.TalkingDataSDKDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54440001F8D504FCA4EF5758 /* Build configuration list for PBXProject "TalkingDataSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54440002F8D504FCA4EF5758 /* Debug */,
+				54440003F8D504FCA4EF5758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54441001F8D504FCA4EF5758 /* Build configuration list for PBXNativeTarget "PhoneDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54441002F8D504FCA4EF5758 /* Debug */,
+				54441003F8D504FCA4EF5758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54440000F8D504FCA4EF5758 /* Project object */;
+}
