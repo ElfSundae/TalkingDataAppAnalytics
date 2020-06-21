@@ -384,7 +384,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.td.TalkingDataSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkingdata.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -408,7 +408,7 @@
 					"$(PROJECT_DIR)/..",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.td.TalkingDataSDKDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.talkingdata.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
