@@ -112,5 +112,4 @@
     [TalkingData onLogin:self.accountIDField.text type:row name:self.accountNameField.text];
 }
 
-
 @end

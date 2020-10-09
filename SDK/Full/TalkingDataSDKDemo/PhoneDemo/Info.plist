@@ -32,7 +32,6 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
-		<string>network-authentication</string>
 		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

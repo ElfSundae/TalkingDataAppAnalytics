@@ -144,7 +144,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 
 
 
-
 /**
  *  @method setAccountId:
  *  设置帐户ID
@@ -168,7 +167,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  *  @param  name        账户昵称
  */
 + (void)onLogin:(NSString *)accountId type:(TDAccountType)type name:(NSString *)name;
-
 #endif
 
 /**
@@ -197,6 +195,19 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 + (void)trackEvent:(NSString *)eventId
              label:(NSString *)eventLabel
         parameters:(NSDictionary *)parameters;
+
+/**
+ *  @method trackEvent:label:parameters:value:
+ *  数值事件
+ *  @param  eventId     事件名称（自定义）
+ *  @param  eventLabel  事件标签（自定义）
+ *  @param  parameters  事件参数 (key只支持NSString, value支持NSString和NSNumber)
+ *  @param  eventValue  事件数值（double）
+ */
++ (void)trackEvent:(NSString *)eventId
+             label:(NSString *)eventLabel
+        parameters:(NSDictionary *)parameters
+             value:(double)eventValue;
 
 /**
  *  @method setGlobalKV:value:
@@ -239,7 +250,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  *  @param  order           订单            类型:TalkingDataOrder
  */
 + (void)onPlaceOrder:(NSString *)accountId order:(TalkingDataOrder *)order;
-
 
 /**
  *  @method onOrderPaySucc  支付
@@ -291,7 +301,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 + (BOOL)handlePushMessage:(NSDictionary *)message;
 #endif
 
-
 #if TARGET_OS_IOS
 /**
  *  @method handleUrl
@@ -300,14 +309,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  */
 + (BOOL)handleUrl:(NSURL *)url;
 
-/**
- *  @method bindWebView
- *  hybrid 灵动分析的事件初始化
- *  @param  webView     支持灵动事件的webView
- *  @note 2020年4月，苹果不再支持新提交的包含App，2020年12月，苹果不再支持含有WebView的App更新。
- *  请开发者注意适配。及时切换到WKWebView。
- */
-+ (void)bindWebView:(UIView *)webView API_DEPRECATED("No longer supported; please adopt WKWebView.", ios(2.0, 12.0));
 
 /**
  *  @method bindWKWebView
@@ -323,7 +324,5 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  */
 + (void)loadWKWebViewConfig:(WKWebView*)wkwebview API_AVAILABLE(ios(8.0));
 #endif
-
-
 
 @end

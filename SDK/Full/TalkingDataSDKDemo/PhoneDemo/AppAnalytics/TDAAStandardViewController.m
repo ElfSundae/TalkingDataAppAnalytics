@@ -40,5 +40,4 @@
     [TalkingData onViewShoppingCart:shoppingCart];
 }
 
-
 @end

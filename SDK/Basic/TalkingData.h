@@ -98,7 +98,6 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 
 
 
-
 /**
  *  @method setAccountId:
  *  设置帐户ID
@@ -122,11 +121,7 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  *  @param  name        账户昵称
  */
 + (void)onLogin:(NSString *)accountId type:(TDAccountType)type name:(NSString *)name;
-
 #endif
-
-
-
 
 
 
