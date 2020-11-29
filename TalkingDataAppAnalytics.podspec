@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license = { :type => 'Copyright', :text => 'Copyright Beijing Tendcloud Tianxia Technology Co., Ltd. All rights reserved.' }
   s.source = { :git => 'https://github.com/ElfSundae/TalkingDataAppAnalytics.git', :tag => s.version }
   s.static_framework = true
-  s.platform = :ios, '8.0'
+  s.platform = :ios, '9.0'
 
   s.default_subspec = 'Basic'
 
