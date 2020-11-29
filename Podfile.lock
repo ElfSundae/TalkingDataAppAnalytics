@@ -11,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  TalkingDataAppAnalytics: 9eb718db32561909ef8c412aae963a8aee7a3185
+  TalkingDataAppAnalytics: a5d5301adf8fc2aa639e2488412535c7b134c4db
 
 PODFILE CHECKSUM: 35754c89eeba1b9b40bb4122152db7e67428c231
 
