@@ -114,7 +114,7 @@
 		E76BA3EA2478ED9D005C775B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "https://0x123.com";
 				TargetAttributes = {
 					E76BA3F12478ED9D005C775B = {
