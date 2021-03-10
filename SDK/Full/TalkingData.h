@@ -13,24 +13,24 @@
 #endif
 
 #if TARGET_OS_IOS
-typedef NS_ENUM(NSUInteger, TDAccountType) {
-    TDAccountTypeAnonymous      = 0,    // 匿名账户
-    TDAccountTypeRegistered     = 1,    // 显性注册账户
-    TDAccountTypeSinaWeibo      = 2,    // 新浪微博
-    TDAccountTypeQQ             = 3,    // QQ账户
-    TDAccountTypeTencentWeibo   = 4,    // 腾讯微博
-    TDAccountTypeND91           = 5,    // 91账户
-    TDAccountTypeWeiXin         = 6,    // 微信
-    TDAccountTypeType1          = 11,   // 自定义类型1
-    TDAccountTypeType2          = 12,   // 自定义类型2
-    TDAccountTypeType3          = 13,   // 自定义类型3
-    TDAccountTypeType4          = 14,   // 自定义类型4
-    TDAccountTypeType5          = 15,   // 自定义类型5
-    TDAccountTypeType6          = 16,   // 自定义类型6
-    TDAccountTypeType7          = 17,   // 自定义类型7
-    TDAccountTypeType8          = 18,   // 自定义类型8
-    TDAccountTypeType9          = 19,   // 自定义类型9
-    TDAccountTypeType10         = 20    // 自定义类型10
+typedef NS_ENUM(NSUInteger, TDProfileType) {
+    TDProfileTypeAnonymous      = 0,    // 匿名账户
+    TDProfileTypeRegistered     = 1,    // 显性注册账户
+    TDProfileTypeSinaWeibo      = 2,    // 新浪微博
+    TDProfileTypeQQ             = 3,    // QQ账户
+    TDProfileTypeTencentWeibo   = 4,    // 腾讯微博
+    TDProfileTypeND91           = 5,    // 91账户
+    TDProfileTypeWeiXin         = 6,    // 微信
+    TDProfileTypeType1          = 11,   // 自定义类型1
+    TDProfileTypeType2          = 12,   // 自定义类型2
+    TDProfileTypeType3          = 13,   // 自定义类型3
+    TDProfileTypeType4          = 14,   // 自定义类型4
+    TDProfileTypeType5          = 15,   // 自定义类型5
+    TDProfileTypeType6          = 16,   // 自定义类型6
+    TDProfileTypeType7          = 17,   // 自定义类型7
+    TDProfileTypeType8          = 18,   // 自定义类型8
+    TDProfileTypeType9          = 19,   // 自定义类型9
+    TDProfileTypeType10         = 20    // 自定义类型10
 };
 #endif
 
@@ -80,6 +80,11 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 #endif
 
 
+typedef NS_ENUM(NSUInteger, TDVendorIdType) {
+    TDVendorIdTypeZX = 1, // 卓信
+    TDVendorIdTypeGX = 2, // 广协
+};
+
 @interface TalkingData: NSObject
 
 /**
@@ -88,6 +93,8 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
  *  @return DeviceID
  */
 + (NSString *)getDeviceID;
+
++ (void)setVendorID:(NSString *)vendorID ofType:(TDVendorIdType)type;
 
 /**
  *  @method setLogEnabled
@@ -145,28 +152,28 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 
 
 /**
- *  @method setAccountId:
+ *  @method setProfileId:
  *  设置帐户ID
- *  @param  accountId   账户ID
+ *  @param  profileId   账户ID
  */
-+ (void)setAccountId:(NSString *)accountId API_DEPRECATED("", ios(1, 1));
++ (void)setProfileId:(NSString *)profileId API_DEPRECATED("", ios(1, 1));
 
 #if TARGET_OS_IOS
 /**
  *  @method onRegister  注册
- *  @param  accountId   账户ID
+ *  @param  profileId   账户ID
  *  @param  type        账户类型
  *  @param  name        账户昵称
  */
-+ (void)onRegister:(NSString *)accountId type:(TDAccountType)type name:(NSString *)name;
++ (void)onRegister:(NSString *)profileId type:(TDProfileType)type name:(NSString *)name;
 
 /**
  *  @method onLogin     登录
- *  @param  accountId   账户ID
+ *  @param  profileId   账户ID
  *  @param  type        账户类型
  *  @param  name        账户昵称
  */
-+ (void)onLogin:(NSString *)accountId type:(TDAccountType)type name:(NSString *)name;
++ (void)onLogin:(NSString *)profileId type:(TDProfileType)type name:(NSString *)name;
 #endif
 
 /**
@@ -246,18 +253,18 @@ typedef NS_ENUM(NSUInteger, TDAccountType) {
 #if TARGET_OS_IOS
 /**
  *  @method onPlaceOrder    下单
- *  @param  accountId       账户ID          类型:NSString
+ *  @param  profileId       账户ID          类型:NSString
  *  @param  order           订单            类型:TalkingDataOrder
  */
-+ (void)onPlaceOrder:(NSString *)accountId order:(TalkingDataOrder *)order;
++ (void)onPlaceOrder:(NSString *)profileId order:(TalkingDataOrder *)order;
 
 /**
  *  @method onOrderPaySucc  支付
- *  @param  accountId       账户ID          类型:NSString
+ *  @param  profileId       账户ID          类型:NSString
  *  @param  payType         支付类型         类型:NSString
  *  @param  order           订单详情         类型:TalkingDataOrder
  */
-+ (void)onOrderPaySucc:(NSString *)accountId payType:(NSString *)payType order:(TalkingDataOrder *)order;
++ (void)onOrderPaySucc:(NSString *)profileId payType:(NSString *)payType order:(TalkingDataOrder *)order;
 
 /**
  *  @method onViewItem

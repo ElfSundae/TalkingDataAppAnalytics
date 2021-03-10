@@ -13,11 +13,10 @@ jobs:
 
       - name: Build Example Project
         run: |
-          set -o pipefail
           xcodebuild clean build \
             -workspace TalkingDataAppAnalytics.xcworkspace -scheme Example \
             -configuration Release CODE_SIGN_IDENTITY=- \
-            -sdk iphonesimulator | xcpretty -c
+            -sdk iphonesimulator | xcpretty
 
       - name: Lint Pod
         run: pod lib lint --allow-warnings

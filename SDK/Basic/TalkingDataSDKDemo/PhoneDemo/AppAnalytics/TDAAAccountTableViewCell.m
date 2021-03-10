@@ -98,7 +98,7 @@
 
 - (IBAction)registerAccount {
     NSInteger row = [self.typePickerView selectedRowInComponent:0];
-    if (row > TDAccountTypeWeiXin) {
+    if (row > TDProfileTypeWeiXin) {
         row += 4;
     }
     [TalkingData onRegister:self.accountIDField.text type:row name:self.accountNameField.text];
@@ -106,7 +106,7 @@
 
 - (IBAction)loginAccount {
     NSInteger row = [self.typePickerView selectedRowInComponent:0];
-    if (row > TDAccountTypeWeiXin) {
+    if (row > TDProfileTypeWeiXin) {
         row += 4;
     }
     [TalkingData onLogin:self.accountIDField.text type:row name:self.accountNameField.text];
