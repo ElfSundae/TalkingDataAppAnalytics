@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version = '4.0.58'
   s.summary = 'TalkingData App Analytics SDK'
   s.homepage = 'https://github.com/ElfSundae/TalkingDataAppAnalytics'
-  s.documentation_url = 'http://doc.talkingdata.com/posts/20'
+  s.documentation_url = 'https://doc.talkingdata.com/posts/20'
   s.authors = { 'TalkingData' => 'https://www.talkingdata.com' }
   s.license = { :type => 'Copyright', :text => 'Copyright Beijing Tendcloud Tianxia Technology Co., Ltd. All rights reserved.' }
   s.source = { :git => 'https://github.com/ElfSundae/TalkingDataAppAnalytics.git', :tag => s.version }
