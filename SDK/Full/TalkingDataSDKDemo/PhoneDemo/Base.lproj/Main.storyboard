@@ -886,7 +886,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCz-jD-875">
-                                                <rect key="frame" x="156" y="8" width="120" height="30"/>
+                                                <rect key="frame" x="28" y="46" width="120" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Vz1-Dj-Dw6"/>
@@ -899,8 +899,22 @@
                                                     <action selector="payOrder" destination="nqT-cq-CPl" eventType="touchUpInside" id="IFM-ZW-W3x"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV3-Uk-j4v">
+                                                <rect key="frame" x="28" y="84" width="120" height="30"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="5Dp-uf-XHS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="mPp-4e-xYa"/>
+                                                </constraints>
+                                                <state key="normal" title="取消订单">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelOrder" destination="nqT-cq-CPl" eventType="touchUpInside" id="vw9-7w-VKN"/>
+                                                </connections>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMF-0H-fpj">
-                                                <rect key="frame" x="28" y="46" width="120" height="30"/>
+                                                <rect key="frame" x="156" y="8" width="120" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Wge-cB-dO2"/>
@@ -928,7 +942,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1m-im-MUU">
-                                                <rect key="frame" x="28" y="84" width="120" height="30"/>
+                                                <rect key="frame" x="156" y="84" width="120" height="30"/>
                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="0DV-Np-JQd"/>
@@ -947,14 +961,16 @@
                                             <constraint firstAttribute="height" constant="122" id="8V7-zY-MIZ"/>
                                             <constraint firstItem="vuK-vc-u2B" firstAttribute="top" secondItem="Knb-lL-YGo" secondAttribute="top" constant="8" id="BB3-Kj-i8m"/>
                                             <constraint firstItem="vuK-vc-u2B" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="-64" id="Hx9-xt-IMR"/>
-                                            <constraint firstItem="CCz-jD-875" firstAttribute="top" secondItem="Knb-lL-YGo" secondAttribute="top" constant="8" id="Ku9-J0-xKf"/>
-                                            <constraint firstItem="CCz-jD-875" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="64" id="Npj-OT-Txr"/>
-                                            <constraint firstItem="sMF-0H-fpj" firstAttribute="top" secondItem="vuK-vc-u2B" secondAttribute="bottom" constant="8" id="Un0-s7-2jM"/>
-                                            <constraint firstItem="sMF-0H-fpj" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="-64" id="dY7-lY-Nkx"/>
-                                            <constraint firstItem="WVu-dP-vcE" firstAttribute="top" secondItem="CCz-jD-875" secondAttribute="bottom" constant="8" id="eZd-Fi-bZR"/>
+                                            <constraint firstItem="CCz-jD-875" firstAttribute="top" secondItem="vuK-vc-u2B" secondAttribute="bottom" constant="8" id="Ku9-J0-xKf"/>
+                                            <constraint firstItem="CCz-jD-875" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="-64" id="Npj-OT-Txr"/>
+                                            <constraint firstItem="EV3-Uk-j4v" firstAttribute="top" secondItem="CCz-jD-875" secondAttribute="bottom" constant="8" id="Psc-hH-E3D"/>
+                                            <constraint firstItem="EV3-Uk-j4v" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="-64" id="Q3J-PS-ju5"/>
+                                            <constraint firstItem="sMF-0H-fpj" firstAttribute="top" secondItem="Knb-lL-YGo" secondAttribute="top" constant="8" id="Un0-s7-2jM"/>
+                                            <constraint firstItem="sMF-0H-fpj" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="64" id="dY7-lY-Nkx"/>
+                                            <constraint firstItem="WVu-dP-vcE" firstAttribute="top" secondItem="sMF-0H-fpj" secondAttribute="bottom" constant="8" id="eZd-Fi-bZR"/>
                                             <constraint firstItem="WVu-dP-vcE" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="64" id="fSp-OZ-oKU"/>
-                                            <constraint firstItem="g1m-im-MUU" firstAttribute="top" secondItem="sMF-0H-fpj" secondAttribute="bottom" constant="8" id="hdY-B9-FHs"/>
-                                            <constraint firstItem="g1m-im-MUU" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="-64" id="kWG-Bp-Uvx"/>
+                                            <constraint firstItem="g1m-im-MUU" firstAttribute="top" secondItem="WVu-dP-vcE" secondAttribute="bottom" constant="8" id="hdY-B9-FHs"/>
+                                            <constraint firstItem="g1m-im-MUU" firstAttribute="centerX" secondItem="Knb-lL-YGo" secondAttribute="centerX" constant="64" id="kWG-Bp-Uvx"/>
                                         </constraints>
                                     </view>
                                 </subviews>

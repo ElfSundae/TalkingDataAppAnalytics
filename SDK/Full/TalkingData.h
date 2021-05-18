@@ -251,20 +251,34 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
 + (void)trackPageEnd:(NSString *)pageName;
 
 #if TARGET_OS_IOS
-/**
- *  @method onPlaceOrder    下单
- *  @param  profileId       账户ID          类型:NSString
- *  @param  order           订单            类型:TalkingDataOrder
- */
-+ (void)onPlaceOrder:(NSString *)profileId order:(TalkingDataOrder *)order;
++ (void)onPlaceOrder:(NSString *)profileId order:(TalkingDataOrder *)order API_DEPRECATED_WITH_REPLACEMENT("onPlaceOrder:amount:currencyType:", ios(1, 1));
+
++ (void)onOrderPaySucc:(NSString *)profileId payType:(NSString *)payType order:(TalkingDataOrder *)order API_DEPRECATED_WITH_REPLACEMENT("onOrderPaySucc:amount:currencyType:paymentType:", ios(1, 1));
 
 /**
- *  @method onOrderPaySucc  支付
- *  @param  profileId       账户ID          类型:NSString
- *  @param  payType         支付类型         类型:NSString
- *  @param  order           订单详情         类型:TalkingDataOrder
+ *  @method onPlaceOrder    下单
+ *  @param  orderId         订单ID          类型:NSString
+ *  @param  amount          金额            类型:int
+ *  @param  currencyType    货币类型         类型:NSString
  */
-+ (void)onOrderPaySucc:(NSString *)profileId payType:(NSString *)payType order:(TalkingDataOrder *)order;
++ (void)onPlaceOrder:(NSString *)orderId amount:(int)amount currencyType:(NSString *)currencyType;
+
+/**
+ *  @method onOrderPaySucc  支付订单
+ *  @param  orderId         订单ID          类型:NSString
+ *  @param  amount          金额            类型:int
+ *  @param  currencyType    货币类型         类型:NSString
+ *  @param  paymentType     支付类型         类型:NSString
+ */
++ (void)onOrderPaySucc:(NSString *)orderId amount:(int)amount currencyType:(NSString *)currencyType paymentType:(NSString *)paymentType;
+
+/**
+ *  @method onCancelOrder   取消订单
+ *  @param  orderId         订单ID          类型:NSString
+ *  @param  amount          金额            类型:int
+ *  @param  currencyType    货币类型         类型:NSString
+ */
++ (void)onCancelOrder:(NSString *)orderId amount:(int)amount currencyType:(NSString *)currencyType;
 
 /**
  *  @method onViewItem
