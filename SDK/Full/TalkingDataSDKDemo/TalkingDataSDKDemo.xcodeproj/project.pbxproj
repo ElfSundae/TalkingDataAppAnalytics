@@ -15,6 +15,7 @@
 		5444101AF8D504FCA4EF5758 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444001AF8D504FCA4EF5758 /* libc++.tbd */; };
 		5444101BF8D504FCA4EF5758 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444001BF8D504FCA4EF5758 /* libz.tbd */; };
 		5444102AF8D504FCA4EF5758 /* libTalkingData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5444002AF8D504FCA4EF5758 /* libTalkingData.a */; };
+		54442103F8D504FCA4EF5758 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54441103F8D504FCA4EF5758 /* Data.plist */; };
 		54442104F8D504FCA4EF5758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54441104F8D504FCA4EF5758 /* Assets.xcassets */; };
 		54442105F8D504FCA4EF5758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54441105F8D504FCA4EF5758 /* LaunchScreen.storyboard */; };
 		54442107F8D504FCA4EF5758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54441107F8D504FCA4EF5758 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		54441004F8D504FCA4EF5758 /* PhoneDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54441101F8D504FCA4EF5758 /* PhoneDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PhoneDemo.entitlements; sourceTree = "<group>"; };
 		54441102F8D504FCA4EF5758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54441103F8D504FCA4EF5758 /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		54441104F8D504FCA4EF5758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54441106F8D504FCA4EF5758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54441108F8D504FCA4EF5758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				54441101F8D504FCA4EF5758 /* PhoneDemo.entitlements */,
 				54441102F8D504FCA4EF5758 /* Info.plist */,
+				54441103F8D504FCA4EF5758 /* Data.plist */,
 				54441104F8D504FCA4EF5758 /* Assets.xcassets */,
 				54441105F8D504FCA4EF5758 /* LaunchScreen.storyboard */,
 				54441107F8D504FCA4EF5758 /* Main.storyboard */,
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54442103F8D504FCA4EF5758 /* Data.plist in Resources */,
 				54442104F8D504FCA4EF5758 /* Assets.xcassets in Resources */,
 				54442105F8D504FCA4EF5758 /* LaunchScreen.storyboard in Resources */,
 				54442107F8D504FCA4EF5758 /* Main.storyboard in Resources */,
@@ -414,7 +418,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PhoneDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,7 +442,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PhoneDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

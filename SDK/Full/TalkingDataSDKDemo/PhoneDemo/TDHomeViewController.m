@@ -24,7 +24,7 @@ static NSString *headerIdentifier = @"Header";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"FunData" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
     self.items = [NSArray arrayWithContentsOfFile:path];
 }
 

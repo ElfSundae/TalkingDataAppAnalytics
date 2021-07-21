@@ -336,14 +336,14 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  *  hybrid 初始化的时候 绑定wkwebview·
  *  @param  wkwebview 支持灵动事件的wkwebview
  */
-+ (void)bindWKWebView:(WKWebView*)wkwebview API_AVAILABLE(ios(8.0));
++ (void)bindWKWebView:(WKWebView*)wkwebview;
 
 /**
  *  @method loadWKWebViewConfig
  *  hybrid 完成加载的时候，load一下hybrid灵动的配置。
  *  @param  wkwebview     支持灵动事件的webView
  */
-+ (void)loadWKWebViewConfig:(WKWebView*)wkwebview API_AVAILABLE(ios(8.0));
++ (void)loadWKWebViewConfig:(WKWebView*)wkwebview;
 #endif
 
 @end

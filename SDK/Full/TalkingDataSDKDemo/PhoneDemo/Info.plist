@@ -29,6 +29,8 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>TalkingData SDK Demo需要获取您的位置信息</string>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>TalkingData SDK Demo需要获取您的广告标识符</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
