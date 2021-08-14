@@ -158,6 +158,7 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  */
 + (void)setProfileId:(NSString *)profileId API_DEPRECATED("", ios(1, 1));
 
+
 #if TARGET_OS_IOS
 /**
  *  @method onRegister  注册
