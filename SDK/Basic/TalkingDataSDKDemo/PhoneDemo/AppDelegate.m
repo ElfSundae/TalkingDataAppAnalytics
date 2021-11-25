@@ -41,19 +41,15 @@
     
     
     
-    
     self.locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.distanceFilter = 10.0;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    if ([UIDevice currentDevice].systemVersion.floatValue >= 8.0f) {
-        [_locationManager requestWhenInUseAuthorization];
-    }
+    [_locationManager requestWhenInUseAuthorization];
     [_locationManager startUpdatingLocation];
     
     return YES;
 }
-
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     NSLog(@"TalkingData: Update location:%@", locations);

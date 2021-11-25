@@ -1,7 +1,7 @@
 PODS:
-  - TalkingDataAppAnalytics (4.0.64):
-    - TalkingDataAppAnalytics/Basic (= 4.0.64)
-  - TalkingDataAppAnalytics/Basic (4.0.64)
+  - TalkingDataAppAnalytics (4.0.66):
+    - TalkingDataAppAnalytics/Basic (= 4.0.66)
+  - TalkingDataAppAnalytics/Basic (4.0.66)
 
 DEPENDENCIES:
   - TalkingDataAppAnalytics (from `.`)
@@ -11,8 +11,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  TalkingDataAppAnalytics: 29e5c91a7e52ce444933c8db2caf92015e74eb9b
+  TalkingDataAppAnalytics: 77051655986ac2bcfa7ad24cd300fb2741753c7f
 
 PODFILE CHECKSUM: 35754c89eeba1b9b40bb4122152db7e67428c231
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.2

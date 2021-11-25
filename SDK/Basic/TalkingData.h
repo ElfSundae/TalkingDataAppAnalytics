@@ -39,6 +39,11 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
     TDVendorIdTypeGX = 2, // 广协
 };
 
+typedef NS_OPTIONS(NSUInteger, TDConfigDisable) {
+    TDConfigDisablePreciseArea = (1UL << 0),
+    TDConfigDisableAnalyticsIntellignet = (1UL << 1),
+};
+
 @interface TalkingData: NSObject
 
 /**
@@ -56,6 +61,8 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  *  @param  enable      默认是开启状态
  */
 + (void)setLogEnabled:(BOOL)enable;
+
++ (void)setConfigurationDisable:(TDConfigDisable)options;
 
 #if TARGET_OS_IOS
 /**
@@ -130,7 +137,6 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  */
 + (void)onLogin:(NSString *)profileId type:(TDProfileType)type name:(NSString *)name;
 #endif
-
 
 
 

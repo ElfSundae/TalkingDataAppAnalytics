@@ -85,6 +85,11 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
     TDVendorIdTypeGX = 2, // 广协
 };
 
+typedef NS_OPTIONS(NSUInteger, TDConfigDisable) {
+    TDConfigDisablePreciseArea = (1UL << 0),
+    TDConfigDisableAnalyticsIntellignet = (1UL << 1),
+};
+
 @interface TalkingData: NSObject
 
 /**
@@ -102,6 +107,8 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  *  @param  enable      默认是开启状态
  */
 + (void)setLogEnabled:(BOOL)enable;
+
++ (void)setConfigurationDisable:(TDConfigDisable)options;
 
 #if TARGET_OS_IOS
 /**
@@ -305,22 +312,6 @@ typedef NS_ENUM(NSUInteger, TDVendorIdType) {
  *  @param  shoppingCart    购物车信息       类型:TalkingDataShoppingCart
  */
 + (void)onViewShoppingCart:(TalkingDataShoppingCart *)shoppingCart;
-#endif
-
-#if TARGET_OS_IOS
-/**
- *  @method setDeviceToken              设置DeviceToken
- *  @param  deviceToken                 从Apple获取的DeviceToken
- */
-+ (void)setDeviceToken:(NSData *)deviceToken;
-
-/**
- *  @method handlePushMessage           处理来自TalkingData的Push消息
- *  @param  message                     收到的消息
- *  @return YES                         来自TalkingData的消息，SDK已处理
- *          NO                          其他来源消息，开发者需自行处理
- */
-+ (BOOL)handlePushMessage:(NSDictionary *)message;
 #endif
 
 #if TARGET_OS_IOS

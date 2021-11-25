@@ -7,15 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#if __IPHONE_OS_VERSION_MAX_ALLOWED > 100000
-#import <UserNotifications/UserNotifications.h>
-#endif
 #import <CoreLocation/CoreLocation.h>
 
 @interface AppDelegate : UIResponder <
-#if __IPHONE_OS_VERSION_MAX_ALLOWED > 100000
-    UNUserNotificationCenterDelegate,
-#endif
     CLLocationManagerDelegate,
     UIApplicationDelegate>
 
