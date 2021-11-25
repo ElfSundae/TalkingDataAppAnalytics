@@ -14,13 +14,13 @@
 
 ### 基础版
 
-App Analytics 基础功能：常规 app 运营分析，包含应用启动、留存、用户分群、渠道统计、账户统计及漏斗分析等。
+- App Analytics 基础功能：常规 app 运营分析，包含应用启动、留存、用户分群、渠道统计、账户统计及漏斗分析等。
 
 ```ruby
 pod 'TalkingDataAppAnalytics'
 ```
 
-或：
+或者：
 
 ```ruby
 pod 'TalkingDataAppAnalytics/Basic'
