@@ -5,6 +5,8 @@
 
 [TalkingData](https://www.talkingdata.com) App Analytics 应用统计分析 SDK 的 CocoaPods 集成库。[SDK](SDK) 目录下包含官方 Demo 源码。
 
+> **v5.x 统一升级版 TalkingDataSDK 见：https://github.com/ElfSundae/TalkingData**
+
 - 官方使用文档: https://doc.talkingdata.com/posts/20
 - 官方 SDK 下载地址: https://doc.talkingdata.com/posts/58
 
