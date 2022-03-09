@@ -1,7 +1,7 @@
 # TalkingData App Analytics SDK
 
-[![Build status](https://github.com/ElfSundae/TalkingDataAppAnalytics/workflows/Build/badge.svg)](https://github.com/ElfSundae/TalkingDataAppAnalytics/actions?query=workflow%3ABuild)
 [![CocoaPods](https://img.shields.io/cocoapods/v/TalkingDataAppAnalytics)](https://cocoapods.org/pods/TalkingDataAppAnalytics)
+[![Build](https://github.com/ElfSundae/TalkingDataAppAnalytics/actions/workflows/build.yml/badge.svg)](https://github.com/ElfSundae/TalkingDataAppAnalytics/actions/workflows/build.yml)
 
 [TalkingData](https://www.talkingdata.com) App Analytics 应用统计分析 SDK 的 CocoaPods 集成库。[SDK](SDK) 目录下包含官方 Demo 源码。
 
